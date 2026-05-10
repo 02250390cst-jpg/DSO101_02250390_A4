@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSO101 A4 – Khamsum Yoezer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 48px 56px;
+      max-width: 560px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+    }
+
+    .badge {
+      background: #e94560;
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    h1 span { color: #e94560; }
+
+    .subtitle {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .info-box {
+      background: rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: left;
+    }
+
+    .info-box .label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .info-box .value {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .pipeline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    .step {
+      background: rgba(233,69,96,0.15);
+      border: 1px solid rgba(233,69,96,0.4);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #e94560;
+    }
+
+    .arrow { color: rgba(255,255,255,0.3); font-size: 1.1rem; }
+
+    .footer {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .footer span { color: #e94560; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">DSO101 · Assignment IV</div>
+    <h1>Hello <span>DevOps!</span></h1>
+    <p class="subtitle">CI/CD with GitHub Actions & Render</p>
+
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="label">Student</div>
+        <div class="value">Khamsum Yoezer</div>
+      </div>
+      <div class="info-box">
+        <div class="label">Student ID</div>
+        <div class="value">02250390</div>
+      </div>
+      <div class="info-box">
+        <div class="label">Course</div>
+        <div class="value">DSO101</div>
+      </div>
+      <div class="info-box">
+        <div class="label">Program</div>
+        <div class="value">BE Software Eng.</div>
+      </div>
+    </div>
+
+    <div class="pipeline">
+      <div class="step">📝 Code</div>
+      <div class="arrow">→</div>
+      <div class="step">🐙 GitHub</div>
+      <div class="arrow">→</div>
+      <div class="step">⚙️ Actions</div>
+      <div class="arrow">→</div>
+      <div class="step">🚀 Render</div>
+    </div>
+
+    <p class="footer">Deployed automatically via <span>GitHub Actions</span> · DSO101 A4</p>
+  </div>
+</body>
+</html>
